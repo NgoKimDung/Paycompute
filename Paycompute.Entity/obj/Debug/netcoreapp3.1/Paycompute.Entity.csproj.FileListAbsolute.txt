@@ -5,3 +5,4 @@ C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Entity\obj\Debug\n
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp3.1\Paycompute.Entity.AssemblyInfo.cs
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp3.1\Paycompute.Entity.dll
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp3.1\Paycompute.Entity.pdb
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Entity\obj\Debug\netcoreapp3.1\Paycompute.Entity.csprojAssemblyReference.cache
