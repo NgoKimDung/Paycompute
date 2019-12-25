@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\dungngo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dungngo\\.nuget\\packages"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Services.deps.json
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Services.dll
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Services.pdb
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Entity.dll
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Persistence.dll
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Entity.pdb
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\bin\Debug\netcoreapp3.1\Paycompute.Persistence.pdb
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\obj\Debug\netcoreapp3.1\Paycompute.Services.csprojAssemblyReference.cache
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\obj\Debug\netcoreapp3.1\Paycompute.Services.AssemblyInfoInputs.cache
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\obj\Debug\netcoreapp3.1\Paycompute.Services.AssemblyInfo.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\obj\Debug\netcoreapp3.1\Paycompute.Services.csproj.CopyComplete
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\obj\Debug\netcoreapp3.1\Paycompute.Services.dll
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute.Services\obj\Debug\netcoreapp3.1\Paycompute.Services.pdb
