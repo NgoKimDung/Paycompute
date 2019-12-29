@@ -1,0 +1,68 @@
+﻿@model EmployeeDetailViewModel;
+
+@{
+    ViewData["Title"] = "Employee Detail";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            <div>
+                <nav aria-label="breadscrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li class="breadcrumb-item"><a asp-action="Index">Employee List</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Detail Employee</li>
+                    </ol>
+                </nav><br />
+                <table class="table table-success">
+                    <thead>
+                        <tr>
+                            <th>Photo</th>
+                            <th>Full Name</th>
+                            <th>Designation</th>
+                            <th>Gender</th>
+                            <th>Date Of Birth</th>
+                            <th>Employee Number</th>
+                            <th>NI Number</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Payment Method</th>
+                            <th>Student Loan</th>
+                            <th>Union Member</th>
+                            <th>Address</th>
+                            <th>City</th>
+                            <th>Postcode</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="@Url.Content(Model.ImageUrl)" class="img-employee"/>
+                            </td>
+                            <td>@Model.FullName</td>
+                            <td>@Model.Designation</td>
+                            <td>@Model.Gender</td>
+                            <td>@Model.DOB</td>
+                            <td>@Model.EmployeeNo</td>
+                            <td>@Model.NationalInsuranceNo</td>
+                            <td><a href="mailto:@Model.Email?subject=Payslip&body=Attached is your payslip.">Send Payslip</a></td>
+                            <td>@Model.Phone</td>
+                            <td>@Model.PaymentMethod</td>
+                            <td>@Model.StudentLoan</td>
+                            <td>@Model.UnionMember</td>
+                            <td>@Model.Address</td>
+                            <td>@Model.City</td>
+                            <td>@Model.Postcode</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+@section Scripts
+{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

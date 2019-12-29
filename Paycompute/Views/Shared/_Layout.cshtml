@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Paycompute</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 </head>
 <body>
     <header>
@@ -20,10 +22,12 @@
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Employee" asp-action="Index"><i class="fas fa-users" style="margin-right: 0.7em"></i>All Employees</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="Create"><i class="far fa-plus-square" style="margin-right: 0.7em"></i>Create New Employees</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Pay" asp-action="Create"><i class="fas fa-cart-arrow-down" style="margin-right: 0.7em"></i>New Pay</a>
+                            <a class="nav-link text-primary" asp-area="" asp-controller="Pay" asp-action="Index"><i class="far fa-money-bill-alt" style="margin-right: 0.7em"></i>Payment Records</a>
                         </li>
                     </ul>
                 </div>
@@ -38,7 +42,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2019 - Paycompute - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; @DateTime.UtcNow.Year - Paycompute - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

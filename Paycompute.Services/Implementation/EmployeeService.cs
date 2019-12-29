@@ -34,7 +34,7 @@ namespace Paycompute.Services.Implementation
 
         public IEnumerable<Employee> GetAll() => _context.Employees;
 
-        public async Task UpdateAsyc(Employee employee)
+        public async Task UpdateAsync(Employee employee)
         {
             _context.Employees.Update(employee);
             await _context.SaveChangesAsync();

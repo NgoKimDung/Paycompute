@@ -69,3 +69,8 @@ C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcorea
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.csproj.CopyComplete
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.dll
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Paycompute.pdb
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Detail.cshtml.g.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Delete.cshtml.g.cs
