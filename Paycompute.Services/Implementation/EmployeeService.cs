@@ -5,12 +5,14 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Paycompute.Services.Implementation
 {
     public class EmployeeService : IEmployeeService
     {
         private readonly ApplicationDbContext _context;
+        private decimal studentLoanAmount;
 
         public EmployeeService(ApplicationDbContext context)
         {
@@ -49,12 +51,43 @@ namespace Paycompute.Services.Implementation
 
         public decimal StudentLoanRepaymentAmount(int id, decimal totalAmount)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            if(employee.StudentLoan == StudentLoan.Yes && totalAmount > 1750 && totalAmount < 2000)
+            {
+                studentLoanAmount = 15m;
+            }
+            else if (employee.StudentLoan == StudentLoan.Yes && totalAmount >= 2000 && totalAmount < 2250)
+            {
+                studentLoanAmount = 38m;
+            }
+            else if (employee.StudentLoan == StudentLoan.Yes && totalAmount >= 2250 && totalAmount < 2500)
+            {
+                studentLoanAmount = 60m;
+            }
+            else if (employee.StudentLoan == StudentLoan.Yes && totalAmount >= 2500)
+            {
+                studentLoanAmount = 83m;
+            }
+            else
+            {
+                studentLoanAmount = 0m;
+            }
+            return studentLoanAmount;
         }
 
         public decimal UnionFees(int id)
         {
-            throw new NotImplementedException();
+            var employee = GetById(id);
+            return (employee.UnionMember == UnionMember.Yes) ? 10m : 0m;
+        }
+
+        public IEnumerable<SelectListItem> GetAllEmployeesForPayroll()
+        {
+            return GetAll().Select(employee => new SelectListItem() 
+            {
+                Value = employee.Id.ToString(),
+                Text = employee.FullName
+            });
         }
     }
 }
