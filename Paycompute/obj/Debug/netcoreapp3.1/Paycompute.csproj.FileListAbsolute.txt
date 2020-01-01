@@ -83,3 +83,5 @@ C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\bin\Debug\netcorea
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Index.cshtml.g.cs
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Create.cshtml.g.cs
 C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Detail.cshtml.g.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Payslip.cshtml.g.cs
+C:\Users\dungngo\Desktop\SourceCode\Git\Paycompute\Paycompute\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Payslip.cshtml.g.cs
