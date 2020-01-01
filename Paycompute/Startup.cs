@@ -38,6 +38,8 @@ namespace Paycompute
             services.AddRazorPages();
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IComputationService, ComputationService>();
+            services.AddScoped<ITaxService, TaxService>();
+            services.AddScoped<INationalInsuranceContributionService, NationalInsuranceContributionService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

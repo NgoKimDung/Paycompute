@@ -96,8 +96,43 @@ namespace Paycompute.Controllers
             ViewBag.taxYears = _computationservice.GetAllTaxYear();
             return View();
         }
-
+        [HttpGet]
         public ActionResult Detail(int id)
+        {
+            var paymentRecord = _computationservice.GetByID(id);
+            if (paymentRecord == null) return NotFound();
+            var model = new PaymentRecordDetailViewModel()
+            {
+                Id = paymentRecord.Id,
+                EmployeeId = paymentRecord.EmployeeId,
+                FullName = paymentRecord.FullName,
+                NiNo = paymentRecord.NiNo,
+                PayDate = paymentRecord.PayDate,
+                PayMonth = paymentRecord.PayMonth,
+                TaxYearID = paymentRecord.TaxYearID,
+                Year = _computationservice.GetTaxYearByID(paymentRecord.TaxYearID).YearOfTax,
+                TaxCode = paymentRecord.TaxCode,
+                HourlyRate = paymentRecord.HourlyRate,
+                HoursWorked = paymentRecord.HoursWorked,
+                ContractualEarnings = paymentRecord.ContractualEarnings,
+                OvertimeEarnings = paymentRecord.OvertimeEarnings,
+                OvertimeRate = _computationservice.OverTimeRate(paymentRecord.HourlyRate),
+                ContractualHours = paymentRecord.ContractualHours,
+                OvertimeHours = paymentRecord.OvertimeHours,
+                Tax = paymentRecord.Tax,
+                NIC = paymentRecord.NIC,
+                UnionFee = paymentRecord.UnionFee,
+                SLC = paymentRecord.SLC,
+                TotalEarnings = paymentRecord.TotalEarnings,
+                TotalDeduction = paymentRecord.TotalDeduction,
+                Employee = paymentRecord.Employee,
+                TaxYear = paymentRecord.TaxYear,
+                NetPayment = paymentRecord.NetPayment
+            };
+            return View(model);
+        }
+        [HttpGet]
+        public ActionResult Payslip(int id)
         {
             var paymentRecord = _computationservice.GetByID(id);
             if (paymentRecord == null) return NotFound();
